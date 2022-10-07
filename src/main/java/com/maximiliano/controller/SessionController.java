@@ -2,7 +2,6 @@ package com.maximiliano.controller;
 
 import java.sql.Timestamp;
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -34,8 +33,6 @@ public class SessionController extends ControllerFactory {
 		entityManager.getTransaction().begin();
 
 		Session session = new Session();
-
-		session.setId(UUID.randomUUID().toString());
 
 		session.setTimestamp(timestamp);
 

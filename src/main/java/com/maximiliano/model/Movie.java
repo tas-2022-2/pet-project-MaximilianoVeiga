@@ -1,6 +1,7 @@
 package com.maximiliano.model;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -34,6 +35,10 @@ public class Movie implements Serializable {
 	@NotNull(message = "Genre cannot be null")
 	@Size(min = 1, max = 255)
 	private String genre;
+
+	public Movie () {
+		this.id = UUID.randomUUID().toString();
+	}
 
 	public String getId() {
 		return id;

@@ -1,6 +1,7 @@
 package com.maximiliano.model;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,6 +27,10 @@ public class Room implements Serializable {
 	@Column(nullable = false)
 	@NotNull(message = "Description cannot be null")
 	private int capacity;
+
+	public Room () {
+		this.id = UUID.randomUUID().toString();
+	}
 
 	public String getId() {
 		return id;

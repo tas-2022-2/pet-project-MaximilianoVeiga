@@ -1,7 +1,6 @@
 package com.maximiliano.controller;
 
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -31,7 +30,6 @@ public class TicketController extends ControllerFactory {
 
 		Ticket ticket = new Ticket();
 
-		ticket.setId(UUID.randomUUID().toString());
 		ticket.setClientName(clientName);
 		ticket.setSeat(seat);
 

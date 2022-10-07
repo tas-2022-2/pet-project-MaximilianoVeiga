@@ -1,7 +1,6 @@
 package com.maximiliano.controller;
 
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.EntityManager;
 
@@ -29,7 +28,6 @@ public class MovieController extends ControllerFactory {
 
 		Movie movie = new Movie();
 
-		movie.setId(UUID.randomUUID().toString());
 		movie.setTitle(title);
 		movie.setDescription(description);
 		movie.setGenre(genre);

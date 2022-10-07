@@ -2,7 +2,9 @@ package com.maximiliano.model;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,6 +19,8 @@ import javax.validation.constraints.NotNull;
 
 import org.eclipse.persistence.annotations.UuidGenerator;
 
+import com.maximiliano.util.Time;
+
 @UuidGenerator(name = "id")
 @Entity(name = "session")
 public class Session implements Serializable {
@@ -30,7 +34,6 @@ public class Session implements Serializable {
 	@NotNull(message = "Timestamp cannot be null")
 	private Timestamp timestamp;
 
-	@NotNull(message = "Ticket cannot be null")
 	@OneToMany(mappedBy = "session", fetch = FetchType.EAGER)
 	private List<Ticket> tickets;
 
@@ -46,6 +49,11 @@ public class Session implements Serializable {
 
 	@Transient
 	private int availableSeats;
+
+	public Session () {
+		this.id = UUID.randomUUID().toString();
+		this.tickets = new ArrayList<Ticket>();
+	}
 
 	public String getId() {
 		return id;
@@ -97,7 +105,7 @@ public class Session implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Session [id=" + id + ", timestamp=" + timestamp + ", tickets=" + tickets + ", room=" + room + ", movie="
+		return "Session [id=" + id + ", timestamp=" + Time.toString(timestamp) + ", tickets=" + tickets + ", room=" + room + ", movie="
 				+ movie + "]";
 	}
 

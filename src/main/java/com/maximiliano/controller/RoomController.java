@@ -1,7 +1,6 @@
 package com.maximiliano.controller;
 
 import java.util.List;
-import java.util.UUID;
 
 import javax.persistence.EntityManager;
 
@@ -29,7 +28,6 @@ public class RoomController extends ControllerFactory {
 
 		Room room = new Room();
 
-		room.setId(UUID.randomUUID().toString());
 		room.setName(name);
 		room.setCapacity(capacity);
 
