@@ -73,11 +73,11 @@ public class TicketTest {
         ticket1.setSession(session1);
         ticket1.setSeat("1A");
         
-        ticket1.setClientName("Jorge");
+        ticket1.setClientName("João");
         ticket1.setSession(session1);
         ticket1.setSeat("1B");
         
-        String expected1 = "Ticket [id=" + ticket1.getId() + ", clientName=Jorge, seat=1B, session=" + session1.toString() + "]";
+        String expected1 = "Ticket [id=" + ticket1.getId() + ", clientName=João, seat=1B, session=" + session1.toString() + "]";
 
         assertEquals(expected1, ticket1.toString());
     }
