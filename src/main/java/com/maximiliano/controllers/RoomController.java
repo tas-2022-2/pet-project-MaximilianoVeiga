@@ -1,10 +1,10 @@
-package com.maximiliano.controller;
+package com.maximiliano.controllers;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import com.maximiliano.model.Room;
+import com.maximiliano.models.Room;
 
 public class RoomController extends ControllerFactory {
 	public RoomController() {

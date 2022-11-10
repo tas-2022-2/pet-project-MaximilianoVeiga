@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.maximiliano.model.Room;
+import com.maximiliano.models.Room;
 
 public class RoomTest {
 

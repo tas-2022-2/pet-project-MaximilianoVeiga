@@ -4,8 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.maximiliano.controller.RoomController;
-import com.maximiliano.model.Room;
+import com.maximiliano.controllers.RoomController;
+import com.maximiliano.models.Room;
 
 public class RoomTest {
 

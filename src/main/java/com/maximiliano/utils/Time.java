@@ -1,4 +1,4 @@
-package com.maximiliano.util;
+package com.maximiliano.utils;
 
 import java.sql.Timestamp;
 import java.util.Calendar;

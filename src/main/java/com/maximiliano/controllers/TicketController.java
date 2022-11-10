@@ -1,12 +1,12 @@
-package com.maximiliano.controller;
+package com.maximiliano.controllers;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import com.maximiliano.model.Session;
-import com.maximiliano.model.Ticket;
+import com.maximiliano.models.Session;
+import com.maximiliano.models.Ticket;
 
 public class TicketController extends ControllerFactory {
 	public TicketController() {

@@ -1,4 +1,4 @@
-package com.maximiliano.controller;
+package com.maximiliano.controllers;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

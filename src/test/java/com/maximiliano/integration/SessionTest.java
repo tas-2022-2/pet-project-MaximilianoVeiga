@@ -6,13 +6,13 @@ import java.sql.Timestamp;
 
 import org.junit.Test;
 
-import com.maximiliano.controller.MovieController;
-import com.maximiliano.controller.RoomController;
-import com.maximiliano.controller.SessionController;
-import com.maximiliano.model.Movie;
-import com.maximiliano.model.Room;
-import com.maximiliano.model.Session;
-import com.maximiliano.util.Time;
+import com.maximiliano.controllers.MovieController;
+import com.maximiliano.controllers.RoomController;
+import com.maximiliano.controllers.SessionController;
+import com.maximiliano.models.Movie;
+import com.maximiliano.models.Room;
+import com.maximiliano.models.Session;
+import com.maximiliano.utils.Time;
 
 public class SessionTest {
 

@@ -1,10 +1,10 @@
-package com.maximiliano.controller;
+package com.maximiliano.controllers;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import com.maximiliano.model.Movie;
+import com.maximiliano.models.Movie;
 
 public class MovieController extends ControllerFactory {
 	public MovieController() {

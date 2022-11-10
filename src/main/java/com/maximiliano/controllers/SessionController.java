@@ -1,4 +1,4 @@
-package com.maximiliano.controller;
+package com.maximiliano.controllers;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import com.maximiliano.model.Movie;
-import com.maximiliano.model.Room;
-import com.maximiliano.model.Session;
+import com.maximiliano.models.Movie;
+import com.maximiliano.models.Room;
+import com.maximiliano.models.Session;
 
 public class SessionController extends ControllerFactory {
 	public SessionController() {

@@ -1,4 +1,4 @@
-package com.maximiliano.model;
+package com.maximiliano.models;
 
 import java.io.Serializable;
 import java.util.UUID;

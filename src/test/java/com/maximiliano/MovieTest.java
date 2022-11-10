@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.maximiliano.model.Movie;
+import com.maximiliano.models.Movie;
 
 public class MovieTest {
     

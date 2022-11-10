@@ -1,21 +1,21 @@
-package com.maximiliano.integration;
+package com.maximiliano.mock;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.maximiliano.controllers.MovieController;
+import com.maximiliano.controller.MockMovieController;
 import com.maximiliano.models.Movie;
 
-public class MovieTest {
+public class MockMovieTest {
 
 	@Test
 	public void createMovie() {
-		Movie movie1 = MovieController.createMovie("The Godfather 2",
+		Movie movie1 = MockMovieController.createMovie("The Godfather 2",
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
 				"Crime");
 
-		Movie findMovie1 = MovieController.findMovie(movie1.getId());
+		Movie findMovie1 = MockMovieController.findMovie(movie1.getId());
 
 		String expected = "Movie [id=" + movie1.getId()
 				+ ", title=The Godfather 2, description=The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son., genre=Crime]";
@@ -25,15 +25,15 @@ public class MovieTest {
 
 	@Test
 	public void updateMovie() {
-		Movie movie1 = MovieController.createMovie("The Godfather 4",
+		Movie movie1 = MockMovieController.createMovie("The Godfather 4",
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
 				"Crime");
 
-		MovieController.updateMovie(movie1.getId(), "The Father 4 - HD",
+		MockMovieController.updateMovie(movie1.getId(), "The Father 4 - HD",
 				"Clandestine empire to his reluctant son.",
 				"Crime");
 
-		Movie findMovie1 = MovieController.findMovie(movie1.getId());
+		Movie findMovie1 = MockMovieController.findMovie(movie1.getId());
 
 		String expected = "Movie [id=" + movie1.getId()
 				+ ", title=The Father 4 - HD, description=Clandestine empire to his reluctant son., genre=Crime]";
@@ -43,31 +43,31 @@ public class MovieTest {
 
 	@Test
 	public void deleteMovie() {
-		Movie movie1 = MovieController.createMovie("The Godfather 6",
+		Movie movie1 = MockMovieController.createMovie("The Godfather 6",
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
 				"Crime");
 
-		MovieController.deleteMovie(movie1.getId());
+		MockMovieController.deleteMovie(movie1.getId());
 
-		Movie findMovie1 = MovieController.findMovie(movie1.getId());
+		Movie findMovie1 = MockMovieController.findMovie(movie1.getId());
 
 		assertEquals(null, findMovie1);
 	}
 
 	@Test
 	public void listMovies() {
-		Movie movie1 = MovieController.createMovie("The Godfather 9",
+		Movie movie1 = MockMovieController.createMovie("The Godfather 9",
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
 				"Crime");
 
-		Movie movie2 = MovieController.createMovie("I'm The Legend 9",
+		Movie movie2 = MockMovieController.createMovie("I'm The Legend 9",
 				"Aging patriarch of an organized crime.",
 				"Action");
 
-		Movie movie3 = MovieController.createMovie("The Shawshank Redemption",
+		Movie movie3 = MockMovieController.createMovie("The Shawshank Redemption",
 				"Two imprisoned friends try to escape Alcatraz", "Drama");
 
-		MovieController.listMovies();
+		MockMovieController.listMovies();
 
 		String expectedMovie1 = "Movie [id=" + movie1.getId()
 				+ ", title=The Godfather 9, description=The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son., genre=Crime]";

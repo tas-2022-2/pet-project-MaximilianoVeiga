@@ -6,10 +6,10 @@ import java.sql.Timestamp;
 
 import org.junit.Test;
 
-import com.maximiliano.model.Movie;
-import com.maximiliano.model.Room;
-import com.maximiliano.model.Session;
-import com.maximiliano.util.Time;
+import com.maximiliano.models.Movie;
+import com.maximiliano.models.Room;
+import com.maximiliano.models.Session;
+import com.maximiliano.utils.Time;
 
 public class SessionTest {
     

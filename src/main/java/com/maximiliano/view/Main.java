@@ -5,14 +5,14 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 
-import com.maximiliano.controller.MovieController;
-import com.maximiliano.controller.RoomController;
-import com.maximiliano.controller.SessionController;
-import com.maximiliano.controller.TicketController;
-import com.maximiliano.model.Movie;
-import com.maximiliano.model.Room;
-import com.maximiliano.model.Session;
-import com.maximiliano.model.Ticket;
+import com.maximiliano.controllers.MovieController;
+import com.maximiliano.controllers.RoomController;
+import com.maximiliano.controllers.SessionController;
+import com.maximiliano.controllers.TicketController;
+import com.maximiliano.models.Movie;
+import com.maximiliano.models.Room;
+import com.maximiliano.models.Session;
+import com.maximiliano.models.Ticket;
 
 public class Main {
 

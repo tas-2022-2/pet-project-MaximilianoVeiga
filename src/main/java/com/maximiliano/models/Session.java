@@ -1,4 +1,4 @@
-package com.maximiliano.model;
+package com.maximiliano.models;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -19,7 +19,7 @@ import javax.validation.constraints.NotNull;
 
 import org.eclipse.persistence.annotations.UuidGenerator;
 
-import com.maximiliano.util.Time;
+import com.maximiliano.utils.Time;
 
 @UuidGenerator(name = "id")
 @Entity(name = "session")
