@@ -35,7 +35,7 @@ public class MockRoomTest {
 
     @Test
     public void deleteRoom() {
-        Room room1 = MockRoomController.createRoom("Room 1C", 10);
+        Room room1 = MockRoomController.createRoom("Room 1Z", 10);
 
         MockRoomController.deleteRoom(room1.getId());
 
