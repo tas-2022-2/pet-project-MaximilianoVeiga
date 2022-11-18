@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.sql.Timestamp;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.maximiliano.controllers.MovieController;
@@ -14,6 +15,7 @@ import com.maximiliano.models.Room;
 import com.maximiliano.models.Session;
 import com.maximiliano.utils.Time;
 
+@Ignore
 public class SessionTest {
 
 	@Test

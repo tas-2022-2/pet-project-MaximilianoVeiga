@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.maximiliano.models.Movie;
 
-public class MockMovieController {
+public class StubMovieController {
 
     static List<Movie> movies = new ArrayList<Movie>();
 
@@ -53,6 +53,5 @@ public class MockMovieController {
             }
         }
     }
-
 
 }

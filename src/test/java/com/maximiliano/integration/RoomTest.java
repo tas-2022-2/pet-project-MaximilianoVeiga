@@ -2,11 +2,13 @@ package com.maximiliano.integration;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.maximiliano.controllers.RoomController;
 import com.maximiliano.models.Room;
 
+@Ignore
 public class RoomTest {
 
 	@Test
