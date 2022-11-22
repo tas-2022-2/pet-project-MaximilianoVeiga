@@ -29,7 +29,7 @@ public class StubMovieTest {
 				"The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
 				"Crime");
 
-		StubMovieController.updateMovie(movie1.getId(), "The Father 40 - HD",
+		StubMovieController.updateMovie(movie1.getId(), "The Father 4 - HD",
 				"Clandestine empire to his reluctant son.",
 				"Crime");
 
